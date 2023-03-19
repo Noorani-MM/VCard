@@ -1,8 +1,10 @@
 <template>
   <div class="min-h-screen">
     <div class="pt-12"></div> <!-- empty space -->
-    <Header />
-    <Navbar />
+    <MyHeader> 
+      <Navbar /> 
+    </MyHeader>
+    
       <div class="px-2 py-5 grid grid-cols-10">
       <div class="col-span-2 grid items-center">
         <img class="w-24 h-24 border rounded-full" src="" alt="My image"/>

@@ -1,5 +1,5 @@
 <template>
-    <nav class="p-2 ">
+    <nav class="p-1">
       <ul class="flex flex-row gap-5">
         <NavbarItem title="ABOUT" />
         <NavbarItem title="SERVICE" />
