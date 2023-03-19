@@ -1,5 +1,5 @@
 <template>
-  <div>
-    <h1>VCard</h1>
+  <div class="min-h-screen">
+    <Navbar />
   </div>
 </template>
