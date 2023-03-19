@@ -2,7 +2,7 @@
     <Detail title="SERVICE" description="What I do">
         <div>
             <h1 class="font-semibold">Programming</h1>
-            <p class="px-2">
+            <div class="px-2">
                 <span>
                     I am a programmer so I can code!<br />
                     I can do coding with this platforms <br />
@@ -33,7 +33,7 @@
                         </div>
                     </div>
                 </div>
-            </p>
+            </div>
         </div>
     </Detail>
 </template>
