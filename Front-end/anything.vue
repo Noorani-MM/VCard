@@ -5,6 +5,8 @@
       <Navbar /> 
     </MyHeader>
     
-    <Detail title="ABOUT" description="A brief info about me"/>
+    <Detail title="ABOUT" description="A brief info about me">
+      
+    </Detail>
   </div>
 </template>
