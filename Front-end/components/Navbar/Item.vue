@@ -1,6 +1,6 @@
 <template>
     <div class="text-lg text-black/50 font-serif p-2 hover:text-black hover:underline underline-offset-8 cursor-pointer sm:text-xl">
-        <NuxtLink :to="`/${ toLower(title) }`" >{{ title }}</NuxtLink>
+        <NuxtLink :to="`${link}`" >{{ title }}</NuxtLink>
     </div>
 </template>
 
@@ -9,10 +9,10 @@
         title : {
             type : String,
             required: true
+        },
+        link : {
+            type: String,
+            required: true
         }
     });
-
-    function toLower(item) {
-        return item.toLowerCase().replaceAll(' ', '-');
-    }
 </script>
