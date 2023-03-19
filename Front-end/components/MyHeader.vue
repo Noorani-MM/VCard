@@ -7,7 +7,7 @@
         <span class="text-lg sm:text-xl">I AM BACKEND DEVELOPER</span>
       </div>
     </div>
-    <hr class="mx-4 bg-blue border-black/50 " />
+    <hr class="mx-4 border-black/50 " />
     <div class="px-5">
       <slot></slot>
     </div>
