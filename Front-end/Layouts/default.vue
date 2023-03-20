@@ -14,6 +14,8 @@
 </template>
 
 <script setup>
-console.log("layouts");
+useHead({
+    title: "Profile"
+});
 </script>
   
