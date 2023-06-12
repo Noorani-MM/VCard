@@ -2,7 +2,7 @@
   <Detail title="HOME" description="A brief info about me."
     ><div class="card bg-base-100 image-full">
       <figure>
-        <img src="/images/software.jpg" alt="about" />
+        <img src="/Images/software.jpg" alt="home" />
       </figure>
       <div class="card-body">
         <p class="text-sm sm:text-lg text-justify">

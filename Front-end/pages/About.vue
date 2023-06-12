@@ -2,7 +2,7 @@
   <Detail title="ABOUT" description="Here you can know more about me !">
     <div class="card bg-base-100 image-full">
       <figure>
-        <img src="/images/about.jpg" alt="about" />
+        <img src="/Images/about.jpg" alt="about" />
       </figure>
       <div class="card-body">
         <p class="text-sm sm:text-lg text-justify">
