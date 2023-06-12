@@ -8,10 +8,9 @@
       </div>
     </div>
     <hr class="mx-4 border-black/50 " />
-    <div class="px-5">
+    <div class="px-5 w-full">
       <slot></slot>
     </div>
-
   </div>
 </template>
 
