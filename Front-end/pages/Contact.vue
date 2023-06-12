@@ -48,7 +48,7 @@
             </div>
           </div>
           <div>
-            <p>The future depends on what you have done today.<br /><span class="font-bold">Mahatma Gandhi</span></p>
+            <p>Knowledge is a precious heritage, and manners are always fresh ornaments, and thought is a transparent mirror.<br /><span class="font-bold">Ali ibn Abi Talib</span></p>
           </div>
         </footer>
       </div>
