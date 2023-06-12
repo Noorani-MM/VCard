@@ -1,7 +1,10 @@
 <template>
   <Detail title="ABOUT" description="Here you can know more about me !">
-    <div class="card card-side bg-base-100">
-      <div class="card-body w-3/4">
+    <div class="card bg-base-100 image-full">
+      <figure>
+        <img src="/images/about.jpg" alt="about" />
+      </figure>
+      <div class="card-body">
         <p class="text-sm sm:text-lg text-justify">
           <span>
             &nbsp;I am energetic, creative, frank and love solving problems and new
@@ -15,9 +18,6 @@
           </span>
         </p>
       </div>
-      <figure class="w-1/4">
-        <img src="https://picsum.photos/id/1/200/300" alt="Noorani" />
-      </figure>
     </div>
   </Detail>
 </template>
