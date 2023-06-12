@@ -2,7 +2,7 @@
   <Detail title="skills" description="What I do as a software engineer">
     <div class="card bg-base-100 image-full">
       <figure>
-        <img src="/images/software.jpg" alt="programming" />
+        <img src="/images/skill.jpg" alt="programming" />
       </figure>
       <div class="card-body">
         <h2 class="card-title">Programming</h2>
