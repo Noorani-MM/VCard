@@ -1,21 +1,44 @@
 <template>
-    <div class="min-h-screen bg-[url('/Images/Background.jpg')] bg-cover">
-        <div class="flex justify-start">
-            <div class="w-[32rem] sm:w-[38rem]">
-                <div class="pt-12"></div> <!-- empty space -->
-                <MyHeader>
-                    <Navbar /> 
-                </MyHeader>
-
-                <RouterView />
-            </div>
-        </div>
+  <div class="min-h-screen bg-[url('/Images/Background.jpg')] bg-cover">
+    <div class="flex justify-start">
+      <div class="w-[32rem] sm:w-[38rem]">
+        <div class="pt-12"></div>
+        <!-- empty space -->
+        <MyHeader>
+          <Navbar>
+            <NavbarItem link="/" title="HOME" :active="check_active_page('')" />
+            <NavbarItem
+              link="/about"
+              title="ABOUT"
+              :active="check_active_page('about')"
+            />
+            <NavbarItem
+              link="/contact"
+              title="Contact"
+              :active="check_active_page('contact')"
+            />
+            <NavbarItem
+              link="/service"
+              title="service"
+              :active="check_active_page('service')"
+            />
+          </Navbar>
+        </MyHeader>
+        <NuxtPage />
+      </div>
     </div>
+  </div>
 </template>
 
 <script setup>
 useHead({
-    title: "Profile"
+  title: "Profile",
 });
+const check_active_page = (current_page) => {
+  let path = useRoute().fullPath;
+  let slug = path.split("/");
+
+  return current_page === slug[1];
+};
 </script>
   
