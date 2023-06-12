@@ -18,9 +18,9 @@
               :active="check_active_page('contact')"
             />
             <NavbarItem
-              link="/service"
-              title="service"
-              :active="check_active_page('service')"
+              link="/skills"
+              title="skills"
+              :active="check_active_page('skills')"
             />
           </Navbar>
         </MyHeader>
