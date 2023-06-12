@@ -1,7 +1,5 @@
 <template>
-    <div class="text-lg text-black/50 font-serif p-2 hover:text-black hover:underline underline-offset-8 cursor-pointer sm:text-xl">
-        <NuxtLink :to="`${link}`" >{{ title }}</NuxtLink>
-    </div>
+    <NuxtLink :to="link" class="tab tab-bordered uppercase" :class="active ? 'tab-active' : '' ">{{ title }}</NuxtLink>
 </template>
 
 <script setup>
@@ -13,6 +11,10 @@
         link : {
             type: String,
             required: true
+        },
+        active : {
+            type : Boolean,
+            default: false
         }
     });
 </script>
