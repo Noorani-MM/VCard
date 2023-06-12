@@ -3,9 +3,9 @@
     <div class="card card-side bg-base-100">
       <div class="card-body w-3/4">
         <p class="text-sm sm:text-lg text-justify">
-          I started coding in 2018. My career started with C# and after 3 years
+          &nbsp;I started coding in 2018. My career started with C# and after 3 years
           I switched to PHP. <br />
-          I have been using Laravel framework and writing API for almost 1 year
+          &nbsp;I have been using Laravel framework and writing API for almost 1 year
           now.
         </p>
       </div>
