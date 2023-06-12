@@ -6,7 +6,7 @@
       </figure>
       <div class="card-body">
         <h2 class="card-title">Programming</h2>
-        <table class="table table-xs">
+        <table class="table table-xs sm:table-md">
           <thead>
             <tr>
               <th>Language</th>
