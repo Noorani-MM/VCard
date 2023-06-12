@@ -3,4 +3,3 @@
         Home page
     </Detail>
 </template>
-  
