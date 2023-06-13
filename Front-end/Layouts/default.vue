@@ -31,11 +31,26 @@
 </template>
 
 <script setup>
-const check_active_page = (current_page) => {
+const current_page = () => {
   let path = useRoute().fullPath;
   let slug = path.split("/");
 
-  return current_page === slug[1];
+  return slug[1] ?? slug[0];
 };
+const check_active_page = (page) => {
+  return page === current_page();
+};
+
+addRouteMiddleware((to, from) => {  
+  let baseTitle = "Noorani";
+  let page = to.fullPath.split('/')[1];
+  if (page === "") {
+    page = "home";
+  }
+  let title = [baseTitle, page].join(" - ");
+  useHead({
+    title: title,
+  });
+});
 </script>
   
