@@ -31,9 +31,6 @@
 </template>
 
 <script setup>
-useHead({
-  title: "Profile",
-});
 const check_active_page = (current_page) => {
   let path = useRoute().fullPath;
   let slug = path.split("/");
