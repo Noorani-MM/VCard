@@ -65,10 +65,3 @@
     </CardBackgrounded>
   </Detail>
 </template>
-
-<script setup>
-const form = ref({
-  mobile: null,
-  description: null,
-});
-</script>
