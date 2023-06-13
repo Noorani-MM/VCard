@@ -67,3 +67,14 @@
     </CardBackgrounded>
   </Detail>
 </template>
+
+<script setup>
+useHead({
+  meta: [
+    {
+      name: "og:description",
+      content: "What Noorani-mm can do as a software engineer."
+    }
+  ]
+})
+</script>

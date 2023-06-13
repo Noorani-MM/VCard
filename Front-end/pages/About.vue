@@ -16,3 +16,19 @@
     </CardBackgrounded>
   </Detail>
 </template>
+
+<script setup>
+useHead({
+  meta: [
+    {
+      name: "description",
+      property: "og:description",
+      content: "Here you can know more about Mohammad Mahdi Noorani"
+    },
+    {
+      name: "og:title",
+      content: "https://noorani-mm.ir/about"
+    }
+  ]
+})
+</script>

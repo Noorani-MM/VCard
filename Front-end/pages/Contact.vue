@@ -65,3 +65,23 @@
     </CardBackgrounded>
   </Detail>
 </template>
+
+<script setup>
+useHead({
+  meta: [
+    {
+      name: "keywords",
+      content: "Noorani-mm contact, bi-telegram, bi-github,Ali ibn Abi Talib",
+    },
+    {
+      name: "description",
+      property: "og:description",
+      content: "There you can contact with Mohammad Mahdi Noorani",
+    },
+    {
+      name: "og:title",
+      content: "https://noorani-mm.ir/contact"
+    }
+  ],
+});
+</script>

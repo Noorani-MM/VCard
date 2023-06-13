@@ -10,34 +10,17 @@ export default defineNuxtConfig({
             meta: [
                 { name: 'viewport', content: 'width=device-width, initial-scale=1' },
                 {
-                    hid: "noorani-mm" ,
-                    name: "noorani-mm",
-                    content: "Noorani-mm,Noorani,Personal page noorani,Mohammad Mahdi,محمد مهدی نورانی,نورانی"
-                },
-                {
-                    hid: "noorani",
-                    name: "noorani",
-                    content: "Noorani,نورانی,محمدی مهدی,Mohammad Mahdi"
-                },
-                {
-                    property: "og:site:name",
-                    content: "noorani-mm.ir"
-                },
-                {
+                    name: "og:description",
                     property: "og:description",
-                    content: "Mohammad Mahdi Noorani personal website"
+                    content: "This is Mohammad Mahdi Noorani personal website"
                 },
                 {
-                    property: "og:title",
-                    content: "Noorani-mm website"
+                    name: "keywords",
+                    content: "Noorani-mm, Noorani, Mohammad Mahdi Noorani, software engineer, Mohammad Mahdi, Mohammad, Mahdi, نورانی, محمد مهدی نورانی, محمدمهدی نورانی"
                 },
                 {
-                    property: "og:type",
-                    content: "personal"
-                },
-                {
-                    property: "og:image",
-                    content: "https://avatars.githubusercontent.com/u/74505328?v=4"
+                    name: "author",
+                    content: "Mohammad Mahdi Noorani"
                 }
             ]
         }
