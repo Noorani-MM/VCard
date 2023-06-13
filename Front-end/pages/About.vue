@@ -1,6 +1,6 @@
 <template>
   <Detail title="ABOUT" description="Here you can know more about me !">
-    <LazyCardBackgrounded background="/Images/about.jpg" alt="about">
+    <CardBackgrounded background="/Images/about.jpg" alt="about">
       <p class="text-sm sm:text-lg text-justify">
         <span>
           &nbsp;I am energetic, creative, frank and love solving problems and
@@ -13,6 +13,6 @@
           improve.
         </span>
       </p>
-    </LazyCardBackgrounded>
+    </CardBackgrounded>
   </Detail>
 </template>

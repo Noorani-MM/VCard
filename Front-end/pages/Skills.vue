@@ -1,6 +1,6 @@
 <template>
   <Detail title="skills" description="What I do as a software engineer">
-    <LazyCardBackgrounded background="/Images/skill.jpg" alt="skills">
+    <CardBackgrounded background="/Images/skill.jpg" alt="skills">
       <h2 class="card-title">Programming</h2>
       <table class="table table-xs sm:table-md">
         <thead>
@@ -64,6 +64,6 @@
           </tr>
         </tbody>
       </table>
-    </LazyCardBackgrounded>
+    </CardBackgrounded>
   </Detail>
 </template>

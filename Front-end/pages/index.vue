@@ -1,6 +1,6 @@
 <template>
   <Detail title="HOME" description="A brief info about me."
-    ><LazyCardBackgrounded
+    ><CardBackgrounded
       background="/Images/software.jpg"
       alt="Software Engineer"
     >
@@ -10,6 +10,6 @@
         &nbsp;I have been using Laravel framework and writing API for almost 1
         year now.
       </p>
-    </LazyCardBackgrounded>
+    </CardBackgrounded>
   </Detail>
 </template>

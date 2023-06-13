@@ -1,6 +1,6 @@
 <template>
   <Detail title="Contact" description="I'd love to hear from you">
-    <LazyCardBackgrounded background="/Images/network.jpeg" alt="network"
+    <CardBackgrounded background="/Images/network.jpeg" alt="network"
       ><h2 class="card-title">My communication</h2>
       <p>You can contact me through the links below.</p>
       <footer class="footer footer-center p-10 text-base-content rounded">
@@ -62,7 +62,7 @@
           </p>
         </div>
       </footer>
-    </LazyCardBackgrounded>
+    </CardBackgrounded>
   </Detail>
 </template>
 
