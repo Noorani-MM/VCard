@@ -1,7 +1,7 @@
 <template>
   <div class="card bg-base-100 image-full">
     <figure>
-      <img :src="background" loading="lazy" :alt="alt" />
+      <img :src="background" :alt="alt" />
     </figure>
     <div class="card-body">
       <slot></slot>
