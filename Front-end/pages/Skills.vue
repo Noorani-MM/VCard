@@ -1,5 +1,5 @@
 <template>
-  <Detail title="skills" description="What I do as a software engineer">
+  <Content title="skills" description="What I do as a software engineer">
     <CardBackgrounded background="/Images/skill.jpg" alt="skills">
       <h2 class="card-title">Programming</h2>
       <table class="table table-xs sm:table-md">
@@ -65,7 +65,7 @@
         </tbody>
       </table>
     </CardBackgrounded>
-  </Detail>
+  </Content>
 </template>
 
 <script setup>

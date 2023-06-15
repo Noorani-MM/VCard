@@ -1,5 +1,5 @@
 <template>
-  <Detail title="ABOUT" description="Here you can know more about me !">
+  <Content title="ABOUT" description="Here you can know more about me !">
     <CardBackgrounded background="/Images/about.jpg" alt="about">
       <p class="text-sm sm:text-lg text-justify">
         <span>
@@ -14,7 +14,7 @@
         </span>
       </p>
     </CardBackgrounded>
-  </Detail>
+  </Content>
 </template>
 
 <script setup>

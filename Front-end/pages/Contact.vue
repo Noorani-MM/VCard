@@ -1,5 +1,5 @@
 <template>
-  <Detail title="Contact" description="I'd love to hear from you">
+  <Content title="Contact" description="I'd love to hear from you">
     <CardBackgrounded background="/Images/network.jpeg" alt="network"
       ><h2 class="card-title">My communication</h2>
       <p>You can contact me through the links below.</p>
@@ -63,7 +63,7 @@
         </div>
       </footer>
     </CardBackgrounded>
-  </Detail>
+  </Content>
 </template>
 
 <script setup>
