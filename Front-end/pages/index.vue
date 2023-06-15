@@ -1,9 +1,6 @@
 <template>
-  <Detail title="HOME" description="A brief info about me."
-    ><CardBackgrounded
-      background="/Images/software.jpg"
-      alt="Software Engineer"
-    >
+  <Detail title="HOME" description="A brief info about me.">
+    <CardBackgrounded background="/Images/software.jpg" alt="Software Engineer">
       <p class="text-sm sm:text-lg text-justify">
         &nbsp;I started coding in 2018. My career started with C# and after 3
         years I switched to PHP. <br />
@@ -19,12 +16,12 @@ useHead({
   meta: [
     {
       name: "og:title",
-      content: "https://noorani-mm.ir/"
+      content: "https://noorani-mm.ir/",
     },
     {
       name: "og:description",
-      content: "There you can know about Mohammad Mahdi Noorani"
-    }
-  ]
-})
+      content: "There you can know about Mohammad Mahdi Noorani",
+    },
+  ],
+});
 </script>
