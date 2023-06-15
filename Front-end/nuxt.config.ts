@@ -23,6 +23,9 @@ export default defineNuxtConfig({
                     content: "Mohammad Mahdi Noorani"
                 }
             ]
+        },
+        pageTransition: {
+            name: "page", mode: "out-in"
         }
     }
 })
