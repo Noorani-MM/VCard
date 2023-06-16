@@ -2,7 +2,7 @@
   <div class="pt-4 mt-2">
     <div class="grid grid-cols-8 gap-4 sm:gap-6 font-serif">
       <h2
-        class="col-span-3 bg-black text-white uppercase text-3xl sm:text-4xl font-bold p-2 grid justify-center"
+        class="col-span-3 bg-accent-content uppercase text-3xl sm:text-4xl font-bold p-2 grid justify-center"
       >
         {{ title }}
       </h2>
@@ -10,7 +10,7 @@
         <span class="w-full">
           {{ description }}
 
-          <hr class="border-black/30 mt-1 mr-5" />
+          <hr class="border-info-content mt-1 mr-5" />
         </span>
       </div>
     </div>
