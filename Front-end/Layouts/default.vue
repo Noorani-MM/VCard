@@ -1,9 +1,9 @@
 <template>
-  <div class="flex h-screen w-screen bg-black/80">
+  <div class="flex h-screen w-screen">
     <div class="flex justify-start h-fit my-auto">
       <div class="w-[97%] sm:w-[38rem] mx-auto md:mx-2">
         <!-- Header -->
-        <div class="bg-white/95">
+        <div class="bg-primary">
           <div class="pl-4 uppercase">
             <div class="text-black/50 font-bold font-serif mb-4 py-1">
               <span class="text-xl sm:text-2xl">Hello. My name is</span>
@@ -41,7 +41,7 @@
           </div>
         </div>
         <!-- Page content-->
-        <div class="bg-white/95">
+        <div class="bg-primary">
           <NuxtPage />
         </div>
       </div>
