@@ -5,7 +5,7 @@
         <!-- Header -->
         <div class="bg-base-200">
           <div class="pl-4 uppercase">
-            <div class="text-secondary font-bold font-serif mb-4 py-1">
+            <div class="text-warning font-bold font-serif mb-4 py-1">
               <span class="text-xl sm:text-2xl">Hello. My name is</span>
               <h1 class="text-info-content text-2xl sm:text-3xl">
                 MOHAMMAD MAHDI NOORANI
