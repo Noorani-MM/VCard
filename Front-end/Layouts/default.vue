@@ -3,17 +3,17 @@
     <div class="flex justify-start h-fit my-auto">
       <div class="w-[97%] sm:w-[38rem] mx-auto md:mx-2">
         <!-- Header -->
-        <div class="bg-primary">
+        <div class="bg-base-200">
           <div class="pl-4 uppercase">
-            <div class="text-black/50 font-bold font-serif mb-4 py-1">
+            <div class="text-secondary font-bold font-serif mb-4 py-1">
               <span class="text-xl sm:text-2xl">Hello. My name is</span>
-              <h1 class="text-black text-2xl sm:text-3xl">
+              <h1 class="text-info-content text-2xl sm:text-3xl">
                 MOHAMMAD MAHDI NOORANI
               </h1>
               <span class="text-lg sm:text-xl">I am a Fullstack DEVELOPER</span>
             </div>
           </div>
-          <hr class="mx-4 border-black/50" />
+          <hr class="mx-4 border-info-content" />
           <!-- Page links -->
           <div class="px-5 w-full">
             <Navbar>
@@ -41,7 +41,7 @@
           </div>
         </div>
         <!-- Page content-->
-        <div class="bg-primary">
+        <div class="bg-base-200">
           <NuxtPage />
         </div>
       </div>
