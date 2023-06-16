@@ -1,12 +1,12 @@
 <template>
   <div class="flex h-screen w-screen">
-    <div class="flex justify-start h-fit my-auto">
-      <ClientOnly>
-        <CustomParticles />
-      </ClientOnly>
-      <div class="w-[97%] sm:w-[38rem] mx-auto md:mx-2">
+    <ClientOnly>
+      <CustomParticles />
+    </ClientOnly>
+    <div class="flex justify-start h-fit my-auto mx-auto">
+      <div class="w-[97%] sm:w-[38rem] mx-auto">
         <!-- Header -->
-        <div class="bg-base-200">
+        <div class="bg-base-200  rounded-t-md">
           <div class="pl-4 uppercase">
             <div class="text-warning font-bold font-serif mb-4 py-1">
               <span class="text-xl sm:text-2xl">Hello. My name is</span>
@@ -44,7 +44,7 @@
           </div>
         </div>
         <!-- Page content-->
-        <div class="bg-base-200">
+        <div class="bg-base-200 rounded-b-md">
           <NuxtPage />
         </div>
       </div>
