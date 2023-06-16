@@ -61,10 +61,10 @@ const option1 = ref({
   },
   particles: {
     color: {
-      value: "#D100D1",
+      value: "#11edcc",
     },
     links: {
-      color: "#D100D1",
+      color: "#11edcc",
       distance: 180,
       enable: true,
       opacity: 1,
