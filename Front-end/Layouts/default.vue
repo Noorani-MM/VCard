@@ -1,18 +1,20 @@
 <template>
   <div class="flex h-screen w-screen bg-black/80">
     <div class="flex justify-start h-fit my-auto">
-      <div class="w-[97%] sm:w-[38rem] mx-auto md:mx-0">
+      <div class="w-[97%] sm:w-[38rem] mx-auto md:mx-2">
+        <!-- Header -->
         <div class="bg-white/95">
-          <div class="pl-4">
-            <div class="text-black/50 font-bold font-serif mb-4">
-              <span class="text-xl sm:text-2xl">HELLO. MY NAME IS</span>
+          <div class="pl-4 uppercase">
+            <div class="text-black/50 font-bold font-serif mb-4 py-1">
+              <span class="text-xl sm:text-2xl">Hello. My name is</span>
               <h1 class="text-black text-2xl sm:text-3xl">
                 MOHAMMAD MAHDI NOORANI
               </h1>
-              <span class="text-lg sm:text-xl">I AM BACKEND DEVELOPER</span>
+              <span class="text-lg sm:text-xl">I am a Fullstack DEVELOPER</span>
             </div>
           </div>
           <hr class="mx-4 border-black/50" />
+          <!-- Page links -->
           <div class="px-5 w-full">
             <Navbar>
               <NavbarItem
@@ -38,7 +40,8 @@
             </Navbar>
           </div>
         </div>
-        <div>
+        <!-- Page content-->
+        <div class="bg-white/95">
           <NuxtPage />
         </div>
       </div>
