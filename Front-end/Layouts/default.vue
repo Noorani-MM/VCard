@@ -1,6 +1,9 @@
 <template>
   <div class="flex h-screen w-screen">
     <div class="flex justify-start h-fit my-auto">
+      <ClientOnly>
+        <CustomParticles />
+      </ClientOnly>
       <div class="w-[97%] sm:w-[38rem] mx-auto md:mx-2">
         <!-- Header -->
         <div class="bg-base-200">
