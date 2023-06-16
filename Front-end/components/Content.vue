@@ -15,7 +15,7 @@
       </div>
     </div>
 
-    <div class="px-3 pt-2 h-[25rem]">
+    <div class="px-3 py-2 h-[25rem]">
       <slot></slot>
     </div>
   </div>
