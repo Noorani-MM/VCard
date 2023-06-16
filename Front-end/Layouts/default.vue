@@ -1,10 +1,8 @@
 <template>
-  <div class="min-h-screen">
-    <div class="flex justify-start">
-      <div class="w-[32rem] sm:w-[38rem] mx-auto md:mx-0">
-        <div class="pt-12"></div>
-        <!-- empty space -->
-        <div class="bg-white/95 pt-4 m-2">
+  <div class="flex h-screen w-screen bg-black/80">
+    <div class="flex justify-start h-fit my-auto">
+      <div class="w-[97%] sm:w-[38rem] mx-auto md:mx-0">
+        <div class="bg-white/95">
           <div class="pl-4">
             <div class="text-black/50 font-bold font-serif mb-4">
               <span class="text-xl sm:text-2xl">HELLO. MY NAME IS</span>
