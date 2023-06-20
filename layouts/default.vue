@@ -79,7 +79,7 @@ addRouteMiddleware((to, from) => {
 <style>
 .page-enter-active,
 .page-leave-active {
-  transition: all 0.7s;
+  transition: all 0.27s;
 }
 .page-enter-from,
 .page-leave-to {
