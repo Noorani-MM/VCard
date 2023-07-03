@@ -2,6 +2,11 @@
 export default defineNuxtConfig({
     ssr: true,
     modules: ['@nuxtjs/tailwindcss'],
+    hooks: {
+        'nitro:config' (config) {
+            config.prerender!.routes = config.prerender!.routes!.filter(r => r !== '/200.html')
+        }
+    },
     app: {
         head: {
             htmlAttrs: {
