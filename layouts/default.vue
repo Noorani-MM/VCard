@@ -1,19 +1,23 @@
 <template>
   <div class="flex h-screen w-screen">
-    <ClientOnly>
+    <!-- <ClientOnly>
       <CustomParticles />
-    </ClientOnly>
+    </ClientOnly>-->
     <div class="flex justify-start h-fit my-auto mx-auto">
       <div class="w-[97%] sm:w-[38rem] mx-auto">
         <!-- Header -->
-        <div class="bg-base-200  rounded-t-md">
+        <div class="bg-base-200 rounded-t-md">
           <div class="pl-4 uppercase">
             <div class="text-warning font-bold font-serif mb-4 py-1">
-              <span class="text-xl sm:text-2xl">Hello. My name is</span>
+              <span class="text-xl sm:text-2xl">{{
+                config.__(`${layout}/title`.split("/"), null, lang)
+              }}</span>
               <h1 class="text-info-content text-2xl sm:text-3xl">
-                MOHAMMAD MAHDI NOORANI
+                {{ config.__(`${layout}/name`.split("/"), null, lang) }}
               </h1>
-              <span class="text-lg sm:text-xl">I am a Fullstack DEVELOPER</span>
+              <span class="text-lg sm:text-xl">{{
+                config.__(`${layout}/skill`.split("/"), null, lang)
+              }}</span>
             </div>
           </div>
           <hr class="mx-4 border-info-content" />
@@ -22,22 +26,22 @@
             <Navbar>
               <NavbarItem
                 link="/"
-                title="HOME"
+                :title="config.__(`${tabs}/home`.split('/'), null, lang)"
                 :active="check_active_page('')"
               />
               <NavbarItem
                 link="/about"
-                title="ABOUT"
+                :title="config.__(`${tabs}/about`.split('/'), null, lang)"
                 :active="check_active_page('about')"
               />
               <NavbarItem
                 link="/contact"
-                title="Contact"
+                :title="config.__(`${tabs}/contact`.split('/'), null, lang)"
                 :active="check_active_page('contact')"
               />
               <NavbarItem
                 link="/skills"
-                title="skills"
+                :title="config.__(`${tabs}/skill`.split('/'), null, lang)"
                 :active="check_active_page('skills')"
               />
             </Navbar>
@@ -53,6 +57,12 @@
 </template>
 
 <script setup>
+import Config from "~~/composables/Config";
+
+const layout = "layout/header";
+const tabs = "layout/tabs";
+const lang = ref("en");
+
 const current_page = () => {
   let path = useRoute().fullPath;
   let slug = path.split("/");

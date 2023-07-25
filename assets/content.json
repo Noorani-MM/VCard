@@ -1,0 +1,17 @@
+{
+    "en": {
+        "layout": {
+            "header": {
+                "title": "HELLO. MY NAME IS",
+                "name": "MOHAMMAD MAHDI NOORANI",
+                "skill": "I AM A FULLSTACK DEVELOPER"
+            },
+            "tabs": {
+                "home": "HOME",
+                "about": "ABOUT",
+                "contact": "CONTACT",
+                "skill": "SKILLS"
+            }
+        }
+    }
+}
