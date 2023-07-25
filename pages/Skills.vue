@@ -1,5 +1,8 @@
 <template>
-  <Content title="skills" description="What I do as a software engineer">
+  <Content
+    :title="config.__(`${page}/title`.split('/'), null, lang)"
+    :description="config.__(`${page}/description`.split('/'), null, lang)"
+  >
     <CardBackgrounded background="/Images/skill.jpg" alt="skills">
       <h2 class="card-title">Programming</h2>
       <table class="table table-xs sm:table-md">
@@ -69,12 +72,21 @@
 </template>
 
 <script setup>
+import Config from "~~/composables/Config";
+
+const page = "pages/skill";
+const props = defineProps({
+  lang: {
+    type: String,
+    default: "en",
+  },
+});
 useHead({
   meta: [
     {
       name: "og:description",
-      content: "What Noorani-mm can do as a software engineer."
-    }
-  ]
-})
+      content: "What Noorani-mm can do as a software engineer.",
+    },
+  ],
+});
 </script>

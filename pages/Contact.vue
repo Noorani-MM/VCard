@@ -1,8 +1,15 @@
 <template>
-  <Content title="Contact" description="I'd love to hear from you">
+  <Content
+    :title="config.__(`${page}/title`.split('/'), null, lang)"
+    :description="config.__(`${page}/description`.split('/'), null, lang)"
+  >
     <CardBackgrounded background="/Images/network.jpeg" alt="network"
-      ><h2 class="card-title">My communication</h2>
-      <p>You can contact me through the links below.</p>
+      ><h2 class="card-title">
+        {{ config.__(`${page}/content/title`.split("/"), null, lang) }}
+      </h2>
+      <p>
+        {{ config.__(`${page}/content/description`.split("/"), null, lang) }}
+      </p>
       <footer class="footer footer-center p-10 text-base-content rounded">
         <div>
           <div class="grid grid-flow-col gap-4">
@@ -53,13 +60,7 @@
           </div>
         </div>
         <div>
-          <p>
-            Knowledge is a precious heritage, and manners are always fresh
-            ornaments, and thought is a transparent mirror.<br /><span
-              class="font-bold"
-              >Ali ibn Abi Talib</span
-            >
-          </p>
+          <p>{{ config.__(`${page}/content/p`.split('/'), null, lang) }}<br /><span class="font-bold">{{ config.__(`${page}/content/span`.split('/'), null, lang) }}</span></p>
         </div>
       </footer>
     </CardBackgrounded>
@@ -67,6 +68,15 @@
 </template>
 
 <script setup>
+import Config from "~~/composables/Config";
+
+const page = "pages/contact";
+const props = defineProps({
+  lang: {
+    type: String,
+    default: "en",
+  },
+});
 useHead({
   meta: [
     {
@@ -80,8 +90,8 @@ useHead({
     },
     {
       name: "og:title",
-      content: "https://noorani-mm.ir/contact"
-    }
+      content: "https://noorani-mm.ir/contact",
+    },
   ],
 });
 </script>

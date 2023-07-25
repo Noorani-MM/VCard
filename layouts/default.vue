@@ -49,7 +49,7 @@
         </div>
         <!-- Page content-->
         <div class="bg-base-200 rounded-b-md">
-          <NuxtPage />
+          <NuxtPage :lang="lang"/>
         </div>
       </div>
     </div>
