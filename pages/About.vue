@@ -19,7 +19,6 @@ const props = defineProps({
   },
 });
 
-console.log(props.test);
 const page = "pages/about";
 useHead({
   meta: [

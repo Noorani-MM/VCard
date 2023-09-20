@@ -1,8 +1,8 @@
 <template>
-  <div class="flex h-screen w-screen">
-    <!-- <ClientOnly>
+  <div class="flex h-screen w-screen" :style="`direction: ${config.__('direction', null, lang)};`">
+    <ClientOnly>
       <CustomParticles />
-    </ClientOnly>-->
+    </ClientOnly>
     <div class="flex justify-start h-fit my-auto mx-auto">
       <div class="w-[97%] sm:w-[38rem] mx-auto">
         <!-- Header -->
