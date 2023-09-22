@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-    direction: rtl;
-}
-
 @layer components {
     .transition, .link, .btn, .btn-primary, .btn-secondary,
     .form .submit button, .btn-accent, .btn-info, .btn-error,
