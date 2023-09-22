@@ -1,3 +1,119 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body{
+    direction: rtl;
+}
+
+@layer components {
+    .transition, .link, .btn, .btn-primary, .btn-secondary,
+    .form .submit button, .btn-accent, .btn-info, .btn-error,
+    .btn-success, .navbar-link {
+        @apply transition-all duration-150
+    }
+    .btn, .btn-primary, .btn-secondary, .form .submit button,
+    .btn-accent, .btn-info, .btn-error, .btn-success {
+        @apply px-3 py-2 rounded-md flex flex-row items-center cursor-pointer justify-center bg-base-100 border border-base-content text-base-content hover:bg-base-content hover:text-white outline-none ring-0
+    }
+    .btn-primary, .form .submit button {
+        @apply bg-primary border-primary text-primary-text hover:bg-primary/90 hover:text-primary-text
+         [&>svg]:!fill-primary hover:[&>svg]:!fill-primary/90 active:bg-primary-active active:border-primary-active
+    }
+    .btn-secondary {
+        @apply bg-secondary/5 border-secondary text-secondary hover:bg-secondary/10 hover:text-secondary
+         [&>svg]:!fill-secondary active:bg-secondary-active active:border-secondary-active active:text-secondary-text
+    }
+    .btn-accent {
+        @apply bg-accent/5 border-accent text-accent hover:bg-accent/10 hover:text-accent
+         [&>svg]:!fill-accent active:bg-accent active:border-accent active:text-white
+    }
+    .btn-info {
+        @apply bg-info/5 border-info text-info hover:bg-info/10 hover:text-info
+         [&>svg]:!fill-info active:bg-info active:border-info active:text-white active:[&>svg]:!fill-white
+    }
+    .btn-error {
+        @apply bg-error border-error text-white hover:bg-error/90 hover:text-white
+         [&>svg]:!fill-error active:bg-white active:text-error
+    }
+    .btn-success {
+        @apply bg-success/5 border-success text-success hover:bg-success/10 hover:text-success
+         [&>svg]:!fill-success active:bg-success active:border-success active:text-white
+    }
+    .link {
+        @apply flex flex-row items-center gap-1 justify-start px-3 py-2 text-primary cursor-pointer hover:bg-primary/10
+    }
+    .link.active {
+        @apply text-primary-text bg-primary-active
+    }
+    input, select {
+        @apply px-3 py-1 outline-none border-b text-black
+    }
+    .form {
+        @apply flex flex-col gap-2 px-2 pt-2 pb-4 rounded-sm md:rounded-md bg-base-300/20 
+    }
+    .form .title {
+        @apply flex flex-row items-center w-full text-lg font-bold px-1 mb-1
+    }
+    .form .row {
+        @apply flex flex-col gap-1
+    }
+    .form .row label {
+        @apply text-xs flex flex-row items-center gap-1 px-2
+    }
+    .form .row .required {
+        @apply after:content-['*'] after:text-error
+    }
+    .form .row input {
+        @apply mx-1
+    }
+    .form .submit {
+        @apply flex flex-row w-full px-1 justify-end
+    }
+    .form .submit button {
+        @apply w-1/3
+    }
+    .navbar {
+        @apply flex flex-row items-center justify-between px-2 text-xs py-1 border-b shadow-sm sm:text-sm md:text-base
+    }
+    .navbar-link {
+        @apply text-primary px-2 py-1 border-b border-b-transparent hover:border-b-primary cursor-pointer
+    }
+    .navbar-link.active {
+        @apply text-primary-active border-b-primary-active/80
+    }
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #FCFCFB; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #D9D9D9; 
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #aaaaaa; 
+}
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button,
+input[type='number'] {
+    -webkit-appearance: none;
+    margin: 0;
+    -moz-appearance: textfield !important;
+}

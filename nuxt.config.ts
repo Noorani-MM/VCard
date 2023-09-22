@@ -7,5 +7,8 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  css: ['~/assets/css/main.css'],
+  css: [
+    '~/assets/css/main.css',
+    '~/assets/Fonts/YekanWebFonts/css/fontiran.css',
+  ],
 })

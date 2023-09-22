@@ -1,5 +1,5 @@
 <template>
-    <div class="text-blue-500">
+    <div class="text-secondary">
         Hello world !
     </div>
 </template>
