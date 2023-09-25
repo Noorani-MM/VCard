@@ -16,16 +16,16 @@ export default {
       base: {
         100: "#FFFFFF",
         200: "#EDEDED",
-        300: "#DEDEDE",
+        300: "#1E1E1E",
         content: "#1F2937"
       },
       primary: {
-        DEFAULT: "#E300AA",
+        DEFAULT: "#EAAD11",
         active: "#B9008B",
-        text: "#EEDDEE"
+        text: "#FFFFFF"
       },
       secondary: {
-        DEFAULT: "#307EE2",
+        DEFAULT: "#0446B0",
         active: "#074CA5",
         text: "#EEEDDE"
       },
