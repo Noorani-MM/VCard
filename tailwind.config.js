@@ -12,6 +12,7 @@ export default {
       iranyekan: ["iranyekan"],
     },
     colors: {
+      black: "#121212",
       base: {
         100: "#FFFFFF",
         200: "#EDEDED",
