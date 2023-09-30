@@ -1,11 +1,49 @@
 <template>
     <div class="relative flex flex-col w-screen h-screen font-iranyekan bg-base-300 text-white" dir="rtl">
+        <!-- header navbar -->
+        <div class="hidden sm:flex flex-row items-center justify-between h-[9vh] bg-primary px-2 md:px-4 lg:px-6">
+            <!-- links -->
+            <div class="flex flex-row items-center gap-4">
+                <NuxtLink class="border-b-2 border-b-white px-5 py-2">
+                    تماس با ما
+                </NuxtLink>
+                <NuxtLink class="border-b-2 border-b-white px-5 py-2">
+                    صفحه اصلی
+                </NuxtLink>
+            </div>
+
+            <!-- other -->
+            <div class="flex flex-row items-center gap-2">
+                <span class="p-2 rounded-full transition hover:bg-white/20 cursor-pointer">
+                    <svg width="32" height="32" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M25.1287 4.59375C20.8406 5.02125 16.8094 6.91875 13.7344 9.99375C10.2187 13.5094 8.24248 18.2794 8.24248 23.2537V34.5H6.21186C3.10874 34.5 0.59436 37.0144 0.59436 40.1175V40.125C0.59436 41.6138 1.18499 43.0444 2.23874 44.0962C3.29248 45.15 4.72124 45.7425 6.21186 45.7425H21.6881C21.48 46.3294 21.3675 46.9631 21.3675 47.6213C21.3675 50.7281 23.8894 53.25 26.9962 53.25C30.1031 53.25 32.625 50.7281 32.625 47.6213C32.625 46.9631 32.5125 46.3294 32.3025 45.7425H47.6325C49.1231 45.7425 50.5519 45.15 51.6037 44.0962C52.6575 43.0444 53.25 41.6138 53.25 40.125V40.1175C53.25 37.0144 50.7356 34.5 47.6325 34.5H45.75V23.2537C45.75 18.2794 43.7737 13.5094 40.2562 9.99375C37.1869 6.9225 33.1612 5.02688 28.8787 4.59563V2.625C28.8787 1.59 28.0387 0.75 27.0037 0.75C25.9687 0.75 25.1287 1.59 25.1287 2.625V4.59375ZM26.9962 45.7425C28.0331 45.7425 28.875 46.5844 28.875 47.6213C28.875 48.6581 28.0331 49.5 26.9962 49.5C25.9594 49.5 25.1175 48.6581 25.1175 47.6213C25.1175 46.5844 25.9594 45.7425 26.9962 45.7425ZM6.21186 38.25H11.9925V23.2537C11.9925 19.275 13.5731 15.4575 16.3875 12.645C19.2 9.83062 23.0175 8.25 26.9962 8.25C30.975 8.25 34.7925 9.83062 37.605 12.645C40.4194 15.4575 42 19.275 42 23.2537V38.25H47.6325C48.6637 38.25 49.5 39.0863 49.5 40.1175V40.125C49.5 40.62 49.3031 41.0944 48.9525 41.445C48.6019 41.7956 48.1275 41.9925 47.6325 41.9925H6.21186C5.71499 41.9925 5.24061 41.7956 4.88999 41.445C4.54124 41.0944 4.34436 40.62 4.34436 40.125V40.1175C4.34436 39.0863 5.17874 38.25 6.21186 38.25Z"
+                            fill="#1B00BF" />
+                    </svg>
+                </span>
+                <span class="p-2 rounded-full transition hover:bg-white/20 cursor-pointer">
+                    <svg width="32" height="32" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M34 34C35.768 32.232 38.632 32.232 40.4 34L48.6752 42.2752C49.5232 43.1232 50 44.2752 50 45.4752C50 47.9744 47.9744 50 45.4752 50C44.2752 50 43.1232 49.5232 42.2752 48.6752L34 40.4C32.232 38.632 32.232 35.768 34 34Z"
+                            stroke="#1B00BF" stroke-width="3.5" stroke-miterlimit="10" stroke-linejoin="round" />
+                        <path
+                            d="M18 34C26.8366 34 34 26.8366 34 18C34 9.16344 26.8366 2 18 2C9.16344 2 2 9.16344 2 18C2 26.8366 9.16344 34 18 34Z"
+                            stroke="#1B00BF" stroke-width="3.5" stroke-miterlimit="10" stroke-linejoin="round" />
+                        <path d="M18 8.39999C12.6976 8.39999 8.40002 12.6976 8.40002 18" stroke="#1B00BF" stroke-width="3.5"
+                            stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M29.2 29.2L34 34" stroke="#1B00BF" stroke-width="3.5" stroke-miterlimit="10"
+                            stroke-linejoin="round" />
+                    </svg>
+                </span>
+            </div>
+        </div>
         <div class="flex flex-row items-center w-full h-[91vh]overflow-y-auto overflow-x-hidden mb-14">
             <NuxtPage />
         </div>
         <!-- navbar -->
-        <div class="flex flex-row items-center justify-evenly h-[9vh] bg-primary absolute w-full bottom-0 left-0 rounded-t-lg">
-            <NuxtLink>
+        <div
+            class="flex sm:hidden flex-row items-center justify-between h-[9vh] bg-primary absolute w-full bottom-0 left-0 rounded-t-lg">
+            <NuxtLink class="w-1/3 h-full hover:bg-white/10 transition flex px-5 rounded-tr-lg items-center justify-end">
                 <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
                         d="M22.6667 20.3333C22.1144 20.3333 21.6667 20.7811 21.6667 21.3333C21.6667 21.8856 22.1144 22.3333 22.6667 22.3333C23.219 22.3333 23.6667 21.8856 23.6667 21.3333C23.6667 20.7811 23.219 20.3333 22.6667 20.3333ZM19.6667 21.3333C19.6667 19.6765 21.0099 18.3333 22.6667 18.3333C24.3235 18.3333 25.6667 19.6765 25.6667 21.3333C25.6667 22.9901 24.3235 24.3333 22.6667 24.3333C21.0099 24.3333 19.6667 22.9901 19.6667 21.3333Z"
@@ -42,7 +80,7 @@
                         fill="black" />
                 </svg>
             </NuxtLink>
-            <NuxtLink>
+            <NuxtLink class="w-1/3 h-full hover:bg-white/10 transition flex px-5 items-center justify-center">
                 <svg width="30" height="26" viewBox="0 0 30 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M29 12C28.7916 11.9986 28.5888 11.9322 28.42 11.81L15 2.22999L1.58002 11.81C1.36473 11.9375 1.10945 11.9797 0.864582 11.9282C0.619717 11.8766 0.40306 11.7352 0.257383 11.5318C0.111705 11.3283 0.0475933 11.0776 0.0777038 10.8292C0.107814 10.5808 0.229959 10.3527 0.420025 10.19L14.42 0.189992C14.5894 0.0694076 14.7921 0.00460815 15 0.00460815C15.2079 0.00460815 15.4107 0.0694076 15.58 0.189992L29.58 10.19C29.7508 10.3136 29.8781 10.488 29.9438 10.6883C30.0095 10.8885 30.0102 11.1044 29.9459 11.3052C29.8816 11.5059 29.7555 11.6812 29.5856 11.8059C29.4158 11.9307 29.2108 11.9986 29 12Z"
@@ -55,7 +93,7 @@
                         fill="#121212" />
                 </svg>
             </NuxtLink>
-            <NuxtLink>
+            <NuxtLink class="w-1/3 h-full hover:bg-white/10 transition flex px-5 rounded-tl-lg items-center justify-start">
                 <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M29 6C28.9999 5.73481 28.8946 5.48049 28.707 5.293L26.707 3.293C26.5195 3.10545 26.2652 3.00006 26 3H25V1H23V3H21V1H19V3H17V1H15V3H13V1H11V3H9V1H7V3H6C5.73481 3.00006 5.48049 3.10545 5.293 3.293L3.293 5.293C3.10545 5.48049 3.00006 5.73481 3 6V7H1V9H3V11H1V13H3V15H1V17H3V19H1V21H3V23H1V25H3V26C3.00006 26.2652 3.10545 26.5195 3.293 26.707L5.293 28.707C5.48049 28.8946 5.73481 28.9999 6 29H7V31H9V29H11V31H13V29H15V31H17V29H19V31H21V29H23V31H25V29H26C26.2652 28.9999 26.5195 28.8946 26.707 28.707L28.707 26.707C28.8946 26.5195 28.9999 26.2652 29 26V25H31V23H29V21H31V19H29V17H31V15H29V13H31V11H29V9H31V7H29V6ZM27 25.5855L25.5855 27H6.4145L5 25.5855V6.4145L6.4145 5H25.5855L27 6.4145V25.5855Z"
@@ -71,9 +109,8 @@
                     <path d="M17 19H15V21H17V19Z" fill="#121212" />
                     <path
                         d="M20 15H15V17H19V21H21V16C21 15.7348 20.8946 15.4804 20.7071 15.2929C20.5196 15.1054 20.2652 15 20 15Z"
-                        fill="#121212" />
-                </svg>
-            </NuxtLink>
-        </div>
+                    fill="#121212" />
+            </svg>
+        </NuxtLink>
     </div>
-</template>
+</div></template>
