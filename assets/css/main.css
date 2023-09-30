@@ -36,6 +36,9 @@
         @apply bg-success/5 border-success text-success hover:bg-success/10 hover:text-success
          [&>svg]:!fill-success active:bg-success active:border-success active:text-white
     }
+    .title {
+        @apply text-primary text-3xl font-bold text-shadow
+    }
     .link {
         @apply flex flex-row items-center gap-1 justify-start px-3 py-2 text-primary cursor-pointer hover:bg-primary/10
     }
@@ -80,6 +83,9 @@
     }
 }
 
+.text-shadow {
+    text-shadow: 0px 2px #121212b0;
+}
 
 /* width */
 ::-webkit-scrollbar {

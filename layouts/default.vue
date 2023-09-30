@@ -37,7 +37,7 @@
                 </span>
             </div>
         </div>
-        <div class="flex flex-row items-center w-full h-[91vh]overflow-y-auto overflow-x-hidden mb-14">
+        <div class="flex flex-row items-center w-full h-[91vh] overflow-y-auto overflow-x-hidden mb-[9vh] sm:mb-0">
             <NuxtPage />
         </div>
         <!-- navbar -->
