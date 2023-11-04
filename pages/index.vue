@@ -24,11 +24,17 @@ const props = defineProps({
 useHead({
   meta: [
     {
-      name: "og:title",
-      content: "https://noorani-mm.ir/",
+      name: "keywords",
+      content: "Mohammad Mahdi, Noorani, محمد مهدی, نورانی, محمد مهدی نورانی, developer, توسعه‌دهنده"
     },
     {
-      name: "og:description",
+      name: "title",
+      property: "og:title",
+      content: "Mohammad Mahdi Noorani",
+    },
+    {
+      name: "description",
+      property: "og:description",
       content: "There you can know about Mohammad Mahdi Noorani",
     },
   ],

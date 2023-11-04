@@ -28,8 +28,9 @@ useHead({
       content: "Here you can know more about Mohammad Mahdi Noorani",
     },
     {
-      name: "og:title",
-      content: "https://noorani-mm.ir/about",
+      name: "title",
+      property: "og:title",
+      content: "What kind of person am I?",
     },
   ],
 });

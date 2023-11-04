@@ -54,7 +54,7 @@ useHead({
   meta: [
     {
       name: "keywords",
-      content: "Noorani-mm contact, bi-telegram, bi-github,Ali ibn Abi Talib",
+      content: "Contact me, Telegram, Github",
     },
     {
       name: "description",
@@ -62,8 +62,9 @@ useHead({
       content: "There you can contact with Mohammad Mahdi Noorani",
     },
     {
-      name: "og:title",
-      content: "https://noorani-mm.ir/contact",
+      name: "title",
+      property: "og:title",
+      content: "You find me !",
     },
   ],
 });

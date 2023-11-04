@@ -84,9 +84,19 @@ const props = defineProps({
 useHead({
   meta: [
     {
-      name: "og:description",
-      content: "What Noorani-mm can do as a software engineer.",
+      name: "keywords",
+      content: "php, laravel, c#, tailwind css, nuxt, javascript, skills"
     },
+    {
+      name: "description",
+      property: "og:description",
+      content: "What can I do as a software engineer.",
+    },
+    {
+      name: "title",
+      property: "og:title",
+      content: "My skills"
+    }
   ],
 });
 </script>
