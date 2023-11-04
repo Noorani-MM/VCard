@@ -11,7 +11,7 @@
       <footer class="footer footer-center p-10 text-base-content rounded">
         <div>
           <div class="grid grid-flow-col gap-4">
-            <a target="_blank" href="https://t.me/Pe3arAbi" class="hover:scale-110 transition-all duration-150">
+            <a target="_blank" href="https://t.me/noorani_mm" class="hover:scale-110 transition-all duration-150">
               <svg
                 xmlns="http://www.w3.org/2000/svg" width="50" height="50" class="bi bi-telegram fill-white/80" viewBox="0 0 32 32">
                 <path
