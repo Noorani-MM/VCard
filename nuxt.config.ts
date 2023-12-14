@@ -1,12 +1,18 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
     ssr: true,
-    modules: ['@nuxtjs/tailwindcss'],
     hooks: {
-        'nitro:config' (config) {
+        'nitro:config'(config) {
             config.prerender!.routes = config.prerender!.routes!.filter(r => r !== '/200.html')
         }
     },
+    postcss: {
+        plugins: {
+            tailwindcss: {},
+            autoprefixer: {},
+        },
+    },
+    css: ['~/assets/css/main.css'],
     app: {
         head: {
             htmlAttrs: {
