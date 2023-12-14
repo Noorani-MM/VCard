@@ -28,7 +28,7 @@ module.exports = {
           active: "#40021F",
           "content": "#FEFEFE"
         },
-        accent: "#11edcc",
+        accent: "#11EDCC",
         info: "#00DBFF",
         success: "#42EB11",
         error: "#E81616"

@@ -16,13 +16,13 @@ const particlesInit = async engine => {
 };
 
 const particlesLoaded = async container => {
-    console.log("Particles container loaded", container);
+    // console.log("Particles container loaded", container);
 };
 
 const option1 = ref({
   background: {
     color: {
-      value: "#000",
+      value: "#080808",
     },
   },
   fpsLimit: 144,
