@@ -6,7 +6,7 @@
     <div class="flex flex-col gap-2 w-full h-full items-center justify-center z-10">
       <div class="flex flex-col gap-2 items-center w-11/12 max-w-xl">
         <!-- header -->
-        <header class="flex flex-col gap-3 bg-base-200 rounded-t-md p-2 font-serif w-full uppercase">
+        <header class="flex flex-col gap-3 bg-base-300 rounded-t-md p-2 font-serif w-full uppercase">
           <!-- header content -->
           <div class="flex flex-col gap-1 px-2 py-1 text-lg sm:text-xl font-semibold">
             <span>HELLO. MY NAME IS</span>
@@ -16,19 +16,23 @@
           <!-- links -->
           <div
             class="flex flex-row items-center justify-evenly gap-1 text-base py-1 px-2 border-t border-t-base-content text-base-content/70">
-            <NuxtLink to="/" class="transmission px-2 py-1 hover:text-base-content rounded-md"
-              :class="check_active_page('') ? 'text-base-content' : ''">Home</NuxtLink>
-            <NuxtLink to="/about" class="transmission px-2 py-1 hover:text-base-content rounded-md"
-              :class="check_active_page('about') ? 'text-base-content' : ''">About</NuxtLink>
-            <NuxtLink to="/contact" class="transmission px-2 py-1 hover:text-base-content rounded-md"
-              :class="check_active_page('contact') ? 'text-base-content' : ''">Contact</NuxtLink>
-            <NuxtLink to="/skills" class="transmission px-2 py-1 hover:text-base-content rounded-md"
-              :class="check_active_page('skills') ? 'text-base-content' : ''">Skills</NuxtLink>
+            <NuxtLink to="/"
+              class="transmission px-2 py-1 hover:text-base-content hover:border-b-base-content border-b-2 border-b-base-content/70"
+              :class="check_active_page('') ? 'text-primary border-b-primary' : ''">Home</NuxtLink>
+            <NuxtLink to="/about"
+              class="transmission px-2 py-1 hover:text-base-content hover:border-b-base-content border-b-2 border-b-base-content/70"
+              :class="check_active_page('about') ? 'text-primary border-b-primary' : ''">About</NuxtLink>
+            <NuxtLink to="/contact"
+              class="transmission px-2 py-1 hover:text-base-content hover:border-b-base-content border-b-2 border-b-base-content/70"
+              :class="check_active_page('contact') ? 'text-primary border-b-primary' : ''">Contact</NuxtLink>
+            <NuxtLink to="/skills"
+              class="transmission px-2 py-1 hover:text-base-content hover:border-b-base-content border-b-2 border-b-base-content/70"
+              :class="check_active_page('skills') ? 'text-primary border-b-primary' : ''">Skills</NuxtLink>
           </div>
         </header>
 
         <!-- page content -->
-        <div class="flex flex-col w-full min-h-[28rem] max-h-[28rem] rounded-b-md py-2 bg-base-200">
+        <div class="flex flex-col w-full min-h-[28rem] max-h-[28rem] rounded-b-md py-2 bg-base-300">
           <NuxtPage />
         </div>
       </div>
@@ -70,5 +74,4 @@ addRouteMiddleware((to, from) => {
 .page-leave-to {
   opacity: 0;
   filter: blur(1rem);
-}
-</style>
+}</style>

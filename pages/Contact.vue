@@ -2,7 +2,7 @@
   <div class="flex flex-col gap-2 w-full h-full">
     <!-- header section -->
     <div class="flex flex-row items-center gap-3 font-serif">
-      <h2 class="flex items-center justify-center px-3 py-2 bg-base-300 text-2xl font-semibold w-56">Contact</h2>
+      <h2 class="flex items-center justify-center px-3 py-2 bg-primary text-primary-content text-2xl font-semibold w-56">Contact</h2>
       <span class="flex flex-row items-center text-sm md:text-base px-2 py-1 border-b border-b-base-content w-[80vh]">
         I'd love to hear from you.
       </span>
@@ -12,7 +12,7 @@
     <div class="flex flex-col w-full items-center h-5/6">
       <div class="relative flex flex-col w-11/12 rounded-lg h-full overflow-clip">
         <NuxtImg class="absolute top-0 left-0 w-full h-full object-cover" src="/Images/network.jpeg" alt="contact" />
-        <div class="flex flex-col gap-16 w-full h-full bg-base-200/30 z-10 px-5 py-6 md:py-8 md:px-7">
+        <div class="flex flex-col gap-16 w-full h-full bg-base-200/40 z-10 px-5 py-6 md:py-8 md:px-7">
           <div class="flex flex-col gap-2">
             <h2 class="text-xl font-semibold">My communication</h2>
             <p class="text-justify">
