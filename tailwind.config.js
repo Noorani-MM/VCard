@@ -24,7 +24,7 @@ module.exports = {
           "content": "#FEFEFE"
         },
         secondary: {
-          DEFAULT: "#F20574",
+          DEFAULT: "#F2A413",
           active: "#40021F",
           "content": "#FEFEFE"
         },

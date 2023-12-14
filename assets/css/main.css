@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .transmission {
+        @apply transition-all duration-150
+    }
+}
