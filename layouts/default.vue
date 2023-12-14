@@ -1,6 +1,9 @@
 <template>
   <div class="flex flex-col h-screen w-screen bg-base-100 text-base-content">
-    <div class="flex flex-col gap-2 w-full h-full items-center justify-center">
+    <ClientOnly>
+      <CustomParticles />
+    </ClientOnly>
+    <div class="flex flex-col gap-2 w-full h-full items-center justify-center z-10">
       <div class="flex flex-col gap-2 items-center w-11/12 max-w-xl">
         <!-- header -->
         <header class="flex flex-col gap-3 bg-base-200 rounded-t-md p-2 font-serif w-full uppercase">

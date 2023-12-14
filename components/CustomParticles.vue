@@ -28,7 +28,7 @@ const option1 = ref({
   fpsLimit: 144,
   fullScreen: {
     enable: true,
-    zIndex: -5,
+    zIndex: -0,
   },
   interactivity: {
     detectsOn: "window",
@@ -55,7 +55,8 @@ const option1 = ref({
       },
       grab: {
         distance: 150,
-        duration: 1,
+        duration: 2,
+        quantity: 8
       },
     },
   },
@@ -65,13 +66,13 @@ const option1 = ref({
     },
     links: {
       color: "#11edcc",
-      distance: 180,
+      distance: 200,
       enable: true,
       opacity: 1,
       width: 1,
     },
     collisions: {
-      enable: false,
+      enable: true,
     },
     move: {
       direction: "none",
@@ -79,14 +80,14 @@ const option1 = ref({
       outMode: "out",
       random: false,
       speed: 3,
-      straight: false,
+      straight: true,
     },
     number: {
       density: {
         enable: true,
         value_area: 1000,
       },
-      value: 60,
+      value: 69,
     },
     opacity: {
       value: 0.5,
@@ -99,7 +100,7 @@ const option1 = ref({
       value: 3,
     },
   },
-  detectRetina: true,
+  detectRetina: false,
 });
 
 </script>

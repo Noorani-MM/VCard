@@ -19,12 +19,12 @@ module.exports = {
           "content": "#FEFEFE"
         },
         primary: {
-          DEFAULT: "#F2E744",
+          DEFAULT: "#F59E0B",
           active: "#D9CF41",
           "content": "#FEFEFE"
         },
         secondary: {
-          DEFAULT: "#F2A413",
+          DEFAULT: "#D946EF",
           active: "#40021F",
           "content": "#FEFEFE"
         },

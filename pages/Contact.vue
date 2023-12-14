@@ -3,7 +3,7 @@
     <!-- header section -->
     <div class="flex flex-row items-center gap-3 font-serif">
       <h2 class="flex items-center justify-center px-3 py-2 bg-base-300 text-2xl font-semibold w-56">Contact</h2>
-      <span class="flex flex-row items-center px-2 py-1 border-b border-b-base-content w-[80vh]">
+      <span class="flex flex-row items-center text-sm md:text-base px-2 py-1 border-b border-b-base-content w-[80vh]">
         I'd love to hear from you.
       </span>
     </div>
