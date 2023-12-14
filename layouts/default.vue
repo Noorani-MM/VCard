@@ -1,55 +1,33 @@
 <template>
-  <div class="flex h-screen w-screen" :style="`direction: ${config.__('direction', null, lang)};`">
-    <ClientOnly>
-      <CustomParticles />
-    </ClientOnly>
-    <div class="flex justify-start h-fit my-auto mx-auto">
-      <div class="w-[97%] sm:w-[38rem] mx-auto">
-        <!-- Header -->
-        <div class="bg-base-200 rounded-t-md">
-          <div class="pl-4 uppercase">
-            <div class="text-warning font-bold font-serif mb-4 py-1">
-              <span class="text-xl sm:text-2xl">{{
-                config.__(`${layout}/title`.split("/"), null, lang)
-              }}</span>
-              <h1 class="text-info-content text-2xl sm:text-3xl">
-                {{ config.__(`${layout}/name`.split("/"), null, lang) }}
-              </h1>
-              <span class="text-lg sm:text-xl">{{
-                config.__(`${layout}/skill`.split("/"), null, lang)
-              }}</span>
-            </div>
+  <div class="flex flex-col h-screen w-screen bg-base-100 text-base-content"
+    :style="`direction: ${config.__('direction', null, lang)};`">
+    <div class="flex flex-col gap-2 w-full h-full items-center justify-center">
+      <div class="flex flex-col gap-2 items-center w-11/12 max-w-xl">
+        <!-- header -->
+        <header class="flex flex-col gap-4 bg-base-200 rounded-t-md py-2 px-1 font-serif w-full uppercase">
+          <!-- header content -->
+          <div class="flex flex-col gap-1 px-2 text-xl font-semibold">
+            <span>HELLO. MY NAME IS</span>
+            <h1 class="text-2xl text-primary">{{ useRuntimeConfig().public.USER_NAME }}</h1>
+            <p>I am a full-stack developer</p>
           </div>
-          <hr class="mx-4 border-info-content" />
-          <!-- Page links -->
-          <div class="px-5 w-full">
-            <Navbar>
-              <NavbarItem
-                link="/"
-                :title="config.__(`${tabs}/home`.split('/'), null, lang)"
-                :active="check_active_page('')"
-              />
-              <NavbarItem
-                link="/about"
-                :title="config.__(`${tabs}/about`.split('/'), null, lang)"
-                :active="check_active_page('about')"
-              />
-              <NavbarItem
-                link="/contact"
-                :title="config.__(`${tabs}/contact`.split('/'), null, lang)"
-                :active="check_active_page('contact')"
-              />
-              <NavbarItem
-                link="/skills"
-                :title="config.__(`${tabs}/skill`.split('/'), null, lang)"
-                :active="check_active_page('skills')"
-              />
-            </Navbar>
+          <!-- links -->
+          <div
+            class="flex flex-row items-center justify-between gap-1 text-base py-1 px-2 border-t border-t-base-content text-base-content/70">
+            <NuxtLink to="/" class="transmission px-2 py-1 hover:text-base-content rounded-md"
+              :class="check_active_page('') ? 'text-base-content' : ''">Home</NuxtLink>
+            <NuxtLink to="/about" class="transmission px-2 py-1 hover:text-base-content rounded-md"
+              :class="check_active_page('about') ? 'text-base-content' : ''">About</NuxtLink>
+            <NuxtLink to="/contact" class="transmission px-2 py-1 hover:text-base-content rounded-md"
+              :class="check_active_page('contact') ? 'text-base-content' : ''">Contact</NuxtLink>
+            <NuxtLink to="/skills" class="transmission px-2 py-1 hover:text-base-content rounded-md"
+              :class="check_active_page('skills') ? 'text-base-content' : ''">Skills</NuxtLink>
           </div>
-        </div>
-        <!-- Page content-->
-        <div class="bg-base-200 rounded-b-md">
-          <NuxtPage :lang="lang"/>
+        </header>
+        <!-- page content -->
+
+        <div class="flex flex-col w-full rounded-b-md py-2 bg-base-200">
+          <NuxtPage />
         </div>
       </div>
     </div>
@@ -57,12 +35,6 @@
 </template>
 
 <script setup>
-import Config from "~~/composables/Config";
-
-const layout = "layout/header";
-const tabs = "layout/tabs";
-const lang = ref("en");
-
 const current_page = () => {
   let path = useRoute().fullPath;
   let slug = path.split("/");
@@ -91,6 +63,7 @@ addRouteMiddleware((to, from) => {
 .page-leave-active {
   transition: all 0.27s;
 }
+
 .page-enter-from,
 .page-leave-to {
   opacity: 0;
