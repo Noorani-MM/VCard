@@ -4,7 +4,7 @@
     <div class="flex flex-row items-center gap-3 font-serif">
       <h2 class="flex items-center justify-center px-3 py-2 bg-primary text-primary-content text-2xl font-semibold w-56">Skills</h2>
       <span class="flex flex-row items-center text-sm md:text-base px-2 py-1 border-b border-b-base-content w-[80vh]">
-        A brief info about me.
+        What I do as a software engineer.
       </span>
     </div>
 
