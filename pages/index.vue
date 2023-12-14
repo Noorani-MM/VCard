@@ -1,26 +1,33 @@
 <template>
-  <Content
-    :title="config.__(`${page}/title`.split('/'), null, lang)"
-    :description="config.__(`${page}/description`.split('/'), null, lang)"
-  >
-    <CardBackgrounded background="/Images/software.jpg" alt="Software Engineer">
-      <p class="text-sm sm:text-lg text-justify" v-html="config.__(`${page}/text`.split('/'), null, lang)">
-      </p>
-    </CardBackgrounded>
-  </Content>
+  <div class="flex flex-col gap-2 w-full h-full">
+    <!-- header section -->
+    <div class="flex flex-row items-center gap-3 font-serif">
+      <h2 class="flex items-center justify-center px-3 py-2 bg-base-300 text-2xl font-semibold w-56">Home</h2>
+      <span class="flex flex-row items-center px-2 py-1 border-b border-b-base-content w-[80vh]">
+        A brief info about me.
+      </span>
+    </div>
+
+    <!-- page content -->
+    <div class="flex flex-col w-full items-center h-5/6">
+      <div class="relative flex flex-col w-11/12 rounded-lg h-full overflow-clip">
+        <NuxtImg class="absolute top-0 left-0 w-full h-full object-cover" src="/Images/software.jpg" alt="software engineer" />
+        <div class="flex flex-col gap-1 w-full h-full bg-base-200/30 z-10 px-5 py-6 md:py-8 md:px-7">
+          <p class="text-justify">
+            &nbsp; Hello, I am Mohammad Mahdi Noorani, I'm from Iran and I'm a full-stack developer. I started coding in
+            2018. My career started
+            with C# and after 3 years I switched to PHP.
+          </p>
+          <p>
+            &nbsp;I have been using Laravel framework and writing API for almost 1 year now.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script setup>
-import Config from "~~/composables/Config";
-
-const page = "pages/home";
-const props = defineProps({
-  lang: {
-    type: String,
-    default: "en",
-  },
-});
-
 useHead({
   meta: [
     {

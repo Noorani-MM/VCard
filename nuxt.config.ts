@@ -12,6 +12,9 @@ export default defineNuxtConfig({
             autoprefixer: {},
         },
     },
+    modules: [
+        '@nuxt/image',
+    ],
     css: ['~/assets/css/main.css'],
     app: {
         head: {
