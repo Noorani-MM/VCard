@@ -8,7 +8,7 @@ module.exports = {
     "./app.vue",
     "./error.vue",
   ],
-  darkMode: false,
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
