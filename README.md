@@ -7,7 +7,7 @@ You can see this project result on : [Noorani-mm.ir](https://noorani-mm.ir)
 **Clone project**
 
 ```bash
-git clone git@github.com:Mochale/VCard.git
+git clone git@github.com:Noorani-MM/VCard.git
 ```
 
 **Go to the directory**
