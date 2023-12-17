@@ -16,16 +16,16 @@
           <!-- links -->
           <div
             class="flex flex-row items-center justify-evenly gap-1 text-base py-1 px-2 border-t border-t-base-content text-base-content/70">
-            <NuxtLink to="/"
+            <NuxtLink draggable="false" to="/"
               class="transmission px-2 py-1 hover:text-base-content hover:border-b-base-content border-b-2 border-b-base-content/70"
               :class="check_active_page('') ? 'text-primary border-b-primary' : ''">Home</NuxtLink>
-            <NuxtLink to="/about"
+            <NuxtLink draggable="false" to="/about"
               class="transmission px-2 py-1 hover:text-base-content hover:border-b-base-content border-b-2 border-b-base-content/70"
               :class="check_active_page('about') ? 'text-primary border-b-primary' : ''">About</NuxtLink>
-            <NuxtLink to="/contact"
+            <NuxtLink draggable="false" to="/contact"
               class="transmission px-2 py-1 hover:text-base-content hover:border-b-base-content border-b-2 border-b-base-content/70"
               :class="check_active_page('contact') ? 'text-primary border-b-primary' : ''">Contact</NuxtLink>
-            <NuxtLink to="/skills"
+            <NuxtLink draggable="false" to="/skills"
               class="transmission px-2 py-1 hover:text-base-content hover:border-b-base-content border-b-2 border-b-base-content/70"
               :class="check_active_page('skills') ? 'text-primary border-b-primary' : ''">Skills</NuxtLink>
           </div>
