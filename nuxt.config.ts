@@ -21,6 +21,12 @@ export default defineNuxtConfig({
             htmlAttrs: {
                 lang: "en"
             },
+            link: [
+                {
+                    rel: "manifest",
+                    href: "/manifest.json"
+                }
+            ],
             title: "Noorani-mm",
             meta: [
                 { name: 'viewport', content: 'width=device-width, initial-scale=1' },
