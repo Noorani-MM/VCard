@@ -36,6 +36,10 @@ export default defineNuxtConfig({
                 {
                     name: "author",
                     content: "Mohammad Mahdi Noorani"
+                },
+                {
+                    name: "theme-color",
+                    content: "#ffa600"
                 }
             ]
         },
