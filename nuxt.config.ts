@@ -50,7 +50,10 @@ export default defineNuxtConfig({
     runtimeConfig: {
         public: {
             APP_NAME: process.env.APP_NAME,
-            USER_NAME: process.env.USER_NAME
+            USER_NAME: process.env.USER_NAME,
+            GITHUB: process.env.GITHUB,
+            TELEGRAM: process.env.TELEGRAM,
+            EMAIL: process.env.EMAIL
         }
     }
 })
