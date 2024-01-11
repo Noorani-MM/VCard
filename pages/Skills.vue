@@ -25,54 +25,14 @@
               </tr>
             </thead>
             <tbody>
-              <tr class="grid grid-cols-4 gap-2">
-                <td>PHP</td>
+              <tr class="grid grid-cols-4 gap-1 md:gap-2" v-for="skill in skills" :key="skill.id">
+                <td>{{ skill.language }}</td>
                 <td>
-                  <Rating :id="1" :rate="5" />
+                  <Rating :id="skill.id" :rate="skill.rate" />
                 </td>
-                <td>Laravel</td>
+                <td>{{ skill.framework }}</td>
                 <td>
-                  <Rating :id="2" :rate="5" />
-                </td>
-              </tr>
-              <tr class="grid grid-cols-4 gap-2">
-                <td>C#</td>
-                <td>
-                  <Rating :id="3" :rate="5" />
-                </td>
-                <td>.Netframework</td>
-                <td>
-                  <Rating :id="4" :rate="5" />
-                </td>
-              </tr>
-              <tr class="grid grid-cols-4 gap-2">
-                <td>Javascript</td>
-                <td>
-                  <Rating :id="5" :rate="4" />
-                </td>
-                <td>Nuxt</td>
-                <td>
-                  <Rating :id="6" :rate="4" />
-                </td>
-              </tr>
-              <tr class="grid grid-cols-4 gap-2">
-                <td>CSS</td>
-                <td>
-                  <Rating :id="7" :rate="4" />
-                </td>
-                <td>Tailwind CSS</td>
-                <td>
-                  <Rating :id="8" :rate="4" />
-                </td>
-              </tr>
-              <tr class="grid grid-cols-4 gap-2">
-                <td>Python</td>
-                <td>
-                  <Rating :id="9" :rate="3" />
-                </td>
-                <td>Django</td>
-                <td>
-                  <Rating :id="10" :rate="0" />
+                  <Rating :id="skill.id * 2" :rate="skill.f_rate" />
                 </td>
               </tr>
             </tbody>
@@ -84,20 +44,49 @@
 </template>
 
 <script setup>
-import Config from "~~/composables/Config";
-
-const page = "pages/skill";
-const props = defineProps({
-  lang: {
-    type: String,
-    default: "en",
+const skills = [
+  {
+    "id": 1,
+    "language": "PHP",
+    "rate": 5,
+    "framework": "Laravel",
+    "f_rate": 5
   },
-});
+  {
+    "id": 2,
+    "language": "C#",
+    "rate": 5,
+    "framework": ".Netframework",
+    "f_rate": 5
+  },
+  {
+    "id": 3,
+    "language": "JavaScript",
+    "rate": 4,
+    "framework": "Nuxt",
+    "f_rate": 4
+  },
+  {
+    "id": 4,
+    "language": "CSS",
+    "rate": 4,
+    "framework": "TailwindCSS",
+    "f_rate": 4
+  },
+  {
+    "id": 5,
+    "language": "Python",
+    "rate": 3,
+    "framework": "Django",
+    "f_rate": 0
+  }
+]
+
 useHead({
   meta: [
     {
       name: "keywords",
-      content: "php, laravel, c#, tailwind css, nuxt, javascript, skills"
+      content: skills.map(i => i.language).join(",")+","+ skills.map(i => i.framework).join(",")
     },
     {
       name: "description",
