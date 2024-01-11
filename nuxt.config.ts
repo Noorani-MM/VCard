@@ -14,32 +14,7 @@ export default defineNuxtConfig({
     },
     modules: [
         '@nuxt/image',
-        '@vite-pwa/nuxt',
     ],
-    pwa: {
-        mode: "production",
-        manifest: {
-            name: "noorani-mm",
-            short_name: "noorani-mm",
-            description: "This is the personal website of Mohammad Mahdi Noorani, where he has provided some information about himself.",
-            background_color: "#262626",
-            display: "standalone",
-            theme_color: "#ffa600",
-            lang: "en",
-            icons: [
-                {
-                    src: "icon-192x192.png",
-                    sizes: "192x192",
-                    type: "image/png"
-                },
-                {
-                    src: "icon-512x512.png",
-                    sizes: "512x512",
-                    type: "image/png"
-                }
-            ]
-        }
-    },
     css: ['~/assets/css/main.css'],
     app: {
         head: {
